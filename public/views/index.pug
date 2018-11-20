@@ -1,0 +1,19 @@
+doctype html
+
+html(lang='en')
+  head
+    title Stash Shortbreaks
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    style(type='text/css').
+      input[type=text] { padding: 2%; width: 75%; }
+      p { padding: 2%; }
+  body
+    form(method='POST' action='/stash')
+      input(type='text', placeholder='stash' name='stash')
+    form(method='POST' action='/cache')
+      input(type='text', placeholder='cache' name='cache')
+    if stash
+      p= stash
+    if cache
+      p
+        a(href=cache, target='_blank')= cache

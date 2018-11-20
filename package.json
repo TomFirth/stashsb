@@ -1,0 +1,22 @@
+{
+  "name": "stashsb",
+  "version": "1.0.0",
+  "description": "stash a string",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "test": "standard"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "1.18.3",
+    "express": "4.16.4",
+    "pug": "2.0.3",
+    "timed-cache": "1.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.6",
+    "standard": "^12.0.1"
+  }
+}
